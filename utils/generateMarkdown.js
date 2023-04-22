@@ -7,13 +7,14 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let badge = ""
+
   switch(license) {
     case "Apache 2.0":
-      badge = "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)";
+      badge = "![License](https://img.shields.io/badge/License-Apache_2.0-red.svg)";
       break;
 
     case "BSD":
-      badge = "![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)";
+      badge = "![License](https://img.shields.io/badge/License-BSD_3--Clause-orange.svg)";
       break;
 
     case "GPL":
@@ -21,18 +22,47 @@ function renderLicenseBadge(license) {
       break;
       
     case "ISC":
-      badge = "![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)";
+      badge = "![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)";
       break;
     
     case "MIT":
-      badge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
+      badge = "![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)";
       break;
+
+    default:
+      badge = "";
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let link = ""
+  switch(license) {
+    case "Apache 2.0":
+      link = "https://opensource.org/licenses/Apache-2.0";
+      break;
+
+    case "BSD 3-Clause":
+      link = "https://opensource.org/licenses/BSD-3-Clause";
+      break;
+
+    case "GPL 3.0":
+      link = "https://www.gnu.org/licenses/gpl-3.0";
+      break;
+      
+    case "ISC":
+      link = "https://opensource.org/licenses/ISC";
+      break;
+    
+    case "MIT":
+      link = "https://opensource.org/licenses/MIT";
+      break;
+
+    default:
+      link = "";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
