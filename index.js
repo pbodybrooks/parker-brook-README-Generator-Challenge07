@@ -1,4 +1,7 @@
-// TODO: Include packages needed for this application
+// include fs to write files, inquirer to ask for user input, and generateMarkdown to create the README.md
+const fs = require("fs");
+const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [];
