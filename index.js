@@ -89,10 +89,8 @@ const questions = [
 function writeToFile(fileName, data) {
     const fileName = "./generated_README/README.md"
 
-    fs.writeFile(fileName, generateMarkdown(data), function(err){
-        if (err) {
-            return console.log(err);
-        }
+    fs.writeFile(fileName, generateMarkdown(data), function(err) {
+        err ? console.log(err) : console.log("Woot! " + fileName + " Successfully Generated!")
     });
 }
 
