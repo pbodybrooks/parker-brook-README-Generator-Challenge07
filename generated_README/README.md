@@ -1,30 +1,30 @@
 
-# dfas ![License](https://img.shields.io/badge/License-Apache_2.0-red.svg)
+# README Generator ![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
 ## Description 
-bxc
+A command line tool that generates a README file for your project
 
 ## Intallation 
-dfas
+n/a
 
 ## Usage 
-cvbxc
+n/a
 
 ## Credits 
-dfga
+n/a
 
-## License ![License](https://img.shields.io/badge/License-Apache_2.0-red.svg)
-This application is covered under the ![Apache 2.0](https://opensource.org/licenses/Apache-2.0)
+## License ![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+This application is covered under the [MIT](https://opensource.org/licenses/MIT) license.
 
 ## Features 
-cbxv
+n/a
 
 ## Contributing 
-sadf
+n/a
 
 ## Tests 
-qwe
+n/a
 
 ## Questions 
-You can find me on GitHub at ![pbodybrooks](github.com/pbodybrooks) 
+You can find me on GitHub at [pbodybrooks](github.com/pbodybrooks) 
 Please do not hesitate to reach me via my email: parkerlamarbrook@gmail.com

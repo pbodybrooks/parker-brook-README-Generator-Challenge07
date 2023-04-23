@@ -75,7 +75,7 @@ function renderLicenseSection(license) {
 
   if (license != "N/A") {
     licenseSection = "## License " + renderLicenseBadge(license);
-    licenseSection += "\nThis application is covered under the " + "![" + license + "](" + renderLicenseLink(license) + ")";
+    licenseSection += "\nThis application is covered under the " + "[" + license + "](" + renderLicenseLink(license) + ") license.";
   }
 
   return licenseSection;
@@ -110,7 +110,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions 
-You can find me on GitHub at ![${data.username}](github.com/${data.username}) \nPlease do not hesitate to reach me via my email: ${data.email}
+You can find me on GitHub at [${data.username}](github.com/${data.username}) \nPlease do not hesitate to reach me via my email: ${data.email}
 `;
 }
 
