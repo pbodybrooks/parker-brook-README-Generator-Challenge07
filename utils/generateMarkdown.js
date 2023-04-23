@@ -110,7 +110,8 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions 
-You can find me on GitHub at [${data.username}](github.com/${data.username}) \nPlease do not hesitate to reach me via my email: ${data.email}
+You can find me on GitHub at [${data.username}](github.com/${data.username}). 
+Please do not hesitate to reach out to me via my email: ${data.email}.
 `;
 }
 
