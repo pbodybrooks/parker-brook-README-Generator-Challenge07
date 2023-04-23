@@ -7,7 +7,8 @@ const licenseSelection = ["Apache 2.0", "BSD 3-Clause", "GPL 3.0", "ISC", "MIT",
 
 function validateUserInput(input){
     if (input === "") {
-        return 'Section input cannot be left blank. If section does not apply, please enter "N/A"';
+        // return 'Section input cannot be left blank. If section does not apply, please enter "N/A"';
+        return "N/A";
     }
     else {
         return true;
@@ -86,7 +87,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
     const fileName = "./generated_README/README.md"
 
     fs.writeFile(fileName, generateMarkdown(data), function(err) {
@@ -96,7 +97,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPromptModule(questions).then(data) (answers => writeToFile(generateMarkdown(answers)))
+    inquirer.prompt(questions).then(data => writeToFile(generateMarkdown(data)))
 }
 
 // Function call to initialize app

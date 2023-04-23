@@ -85,21 +85,19 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   let tableOfContents
 
-  let README = `
+  return `
   # ${data.title} ${renderLicenseBadge(data.license)}
   ## Description \n${data.description}
   ## Intallation \n${data.installation}
   ## Usage \n${data.usage}
   ## Credits \n${data.credits}
-  ${renderLicenseSection(license)}
+  ${renderLicenseSection(data.license)}
   ## Features \n${data.features}
   ## Contributing \n${data.contributing}
   ## Tests \n${data.tests}
   ## Questions \nYou can find me on GitHub at ![${data.username}](github.com/${data.username}) \nPlease do not hesitate to reach me via my email: ${data.email}
-  
   `;
 
-  return README;
 }
 
 module.exports = generateMarkdown;
