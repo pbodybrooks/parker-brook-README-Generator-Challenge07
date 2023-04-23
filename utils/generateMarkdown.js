@@ -74,7 +74,8 @@ function renderLicenseSection(license) {
   let licenseSection = ""
 
   if (license != "N/A") {
-    licenseSection = "## License \n![" + license + "](" + renderLicenseLink(license) + ")"
+    licenseSection = "## License \n![" + license + "](" + renderLicenseLink(license) + ")\n"
+    licenseSection += "This application is covered under the " + license + " license."
   }
 
   return licenseSection;
@@ -89,18 +90,16 @@ function generateMarkdown(data) {
   ## Description \n${data.description}
   ## Intallation \n${data.installation}
   ## Usage \n${data.usage}
+  ## Credits \n${data.credits}
+  ${renderLicenseSection(license)}
+  ## Features \n${data.features}
   ## Contributing \n${data.contributing}
   ## Tests \n${data.tests}
-  ## License \n${data.license}
+  ## Questions \nYou can find me on GitHub at ![${data.username}](github.com/${data.username}) \nPlease do not hesitate to reach me via my email: ${data.email}
+  
   `;
 
   return README;
-  
-  
-
-//   return `# ${data.title}
-
-// `;
 }
 
 module.exports = generateMarkdown;
