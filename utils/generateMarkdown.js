@@ -13,11 +13,11 @@ function renderLicenseBadge(license) {
       badge = "![License](https://img.shields.io/badge/License-Apache_2.0-red.svg)";
       break;
 
-    case "BSD":
+    case "BSD 3-Clause":
       badge = "![License](https://img.shields.io/badge/License-BSD_3--Clause-orange.svg)";
       break;
 
-    case "GPL":
+    case "GPL 3.0":
       badge = "![License](https://img.shields.io/badge/License-GPLv3-blue.svg)";
       break;
       
@@ -74,8 +74,8 @@ function renderLicenseSection(license) {
   let licenseSection = ""
 
   if (license != "N/A") {
-    licenseSection = "## License \n![" + license + "](" + renderLicenseLink(license) + ")\n"
-    licenseSection += "This application is covered under the " + license + " license."
+    licenseSection = "## License " + renderLicenseBadge(license);
+    licenseSection += "\nThis application is covered under the " + "![" + license + "](" + renderLicenseLink(license) + ")";
   }
 
   return licenseSection;
@@ -83,21 +83,35 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  let tableOfContents
-
   return `
-  # ${data.title} ${renderLicenseBadge(data.license)}
-  ## Description \n${data.description}
-  ## Intallation \n${data.installation}
-  ## Usage \n${data.usage}
-  ## Credits \n${data.credits}
-  ${renderLicenseSection(data.license)}
-  ## Features \n${data.features}
-  ## Contributing \n${data.contributing}
-  ## Tests \n${data.tests}
-  ## Questions \nYou can find me on GitHub at ![${data.username}](github.com/${data.username}) \nPlease do not hesitate to reach me via my email: ${data.email}
-  `;
+# ${data.title} ${renderLicenseBadge(data.license)}
 
+## Description 
+${data.description}
+
+## Intallation 
+${data.installation}
+
+## Usage 
+${data.usage}
+
+## Credits 
+${data.credits}
+
+${renderLicenseSection(data.license)}
+
+## Features 
+${data.features}
+
+## Contributing 
+${data.contributing}
+
+## Tests 
+${data.tests}
+
+## Questions 
+You can find me on GitHub at ![${data.username}](github.com/${data.username}) \nPlease do not hesitate to reach me via my email: ${data.email}
+`;
 }
 
 module.exports = generateMarkdown;
