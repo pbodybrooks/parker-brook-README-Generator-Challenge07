@@ -82,7 +82,7 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// write the readme file to the generated_README folder and log and error if one occurs
 function writeToFile(data) {
     const fileName = "./generated_README/README.md"
 
@@ -91,7 +91,7 @@ function writeToFile(data) {
     });
 }
 
-// TODO: Create a function to initialize app
+// initializes the prompting of questions
 function init() {
     inquirer.prompt(questions).then(data => writeToFile(data))
 }

@@ -1,10 +1,5 @@
-// per multiple web resources, the 5 most common licenses are: MIT, Apache 2.0, GNU GPL, BSD, & ISC. 
-// thus, these are the ones I will offer to users
-
-
-
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// a function that returns a license badge based on which license is passed in
+// if there is no license, return an empty string
 function renderLicenseBadge(license) {
   let badge = ""
 
@@ -36,8 +31,8 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// a function that returns the license link
+// if there is no license, return an empty string
 function renderLicenseLink(license) {
   let link = ""
   switch(license) {
@@ -68,8 +63,8 @@ function renderLicenseLink(license) {
   return link;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// a function that returns the license section of README
+// if there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseSection = ""
 
@@ -81,15 +76,16 @@ function renderLicenseSection(license) {
   return licenseSection;
 }
 
-// TODO: Create a function to generate markdown for README
+// generates markdown for README
 function generateMarkdown(data) {
-  // Set any blank values to "N/A"
+  // set any blank values to "N/A"
   for (const key in data) {
     if (!data[key]) {
       data[key] = "N/A";
     }
   }
 
+  // create ToC template literal with contingency for license
   let tableOfContents = `
 * [Installation](#installation)
 * [Usage](#usage)
@@ -107,6 +103,7 @@ tableOfContents += `
 * [Questions](#questions)
 `;
 
+// return the below template literal that builds the entire README
 return `
 # ${data.title} ${renderLicenseBadge(data.license)}
 

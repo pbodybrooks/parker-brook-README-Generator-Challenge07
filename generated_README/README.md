@@ -1,15 +1,15 @@
 
-# dgsdfg ![License](https://img.shields.io/badge/License-Apache_2.0-red.svg)
+# README Generator 
 
 ## Description 
-sdfgsd
+A command line application that uses inquirer to prompt the user for all necessary criteria and generated a README based on the user's responses.
 
 ## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-* [License](#license)
+
 * [Features](#features)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -17,26 +17,25 @@ sdfgsd
 
 
 ## Intallation 
-N/A
+Clone repository, run "npm init" to generate package.JSON, then run "npm i -y" to install inquirer. Following this, enter "node index.js" to run the application and answer the prompted questions.Your generated README can be found in generated_README folder
 
 ## Usage 
-gsdfg
+Answer the prompted questions.
 
 ## Credits 
-cvbad
+inquirer
 
-## License ![License](https://img.shields.io/badge/License-Apache_2.0-red.svg)
-This application is covered under the [Apache 2.0](https://opensource.org/licenses/Apache-2.0) license.
+
 
 ## Features 
-sdfgsd
+Uses node and inquirer to prompt the user for README criteria.
 
 ## Contributing 
-sdfgsd
+N/A
 
 ## Tests 
-dsfgsd
+N/A
 
 ## Questions 
-* You can find me on GitHub at [sdfg](github.com/sdfg). 
-* Please do not hesitate to reach out to me via my email: sdfg.
+* You can find me on GitHub at [pbodybrooks](github.com/pbodybrooks). 
+* Please do not hesitate to reach out to me via my email: parkerlamarbrook@gmail.com.
