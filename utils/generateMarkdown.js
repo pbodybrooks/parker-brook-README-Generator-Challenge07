@@ -84,20 +84,20 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   let tableOfContents = `
-*[Installation](#installation)
-*[Usage](#usage)
-*[Credits](#credits)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
 `
 
 if (data.license !== "N/A"){
-  tableOfContents += `*[License](#license)`;
+  tableOfContents += `* [License](#license)`;
 }
 
 tableOfContents += `
-*[Features](#features)
-*[Contributing](#contributing)
-*[Tests](#tests)
-*[Questions](#questions)
+* [Features](#features)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 `;
 
 return `
@@ -130,8 +130,8 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions 
-*You can find me on GitHub at [${data.username}](github.com/${data.username}). 
-*Please do not hesitate to reach out to me via my email: ${data.email}.
+* You can find me on GitHub at [${data.username}](github.com/${data.username}). 
+* Please do not hesitate to reach out to me via my email: ${data.email}.
 `;
 }
 
