@@ -15,6 +15,9 @@ A command line application that uses node.js and Inquirer to prompt the user for
 * [Tests](#tests)
 * [Questions](#questions)
 
+## Video Demonstration
+![Video Demonstration of app.](assets/videos/README_Generator_Demonstration.webm)
+
 ## Screenshot
 ![Screenshot of app.](assets/images/screenshot.png)
 
