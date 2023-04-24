@@ -133,7 +133,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions 
-* You can find me on GitHub at [${data.username}](github.com/${data.username}). 
+* You can find me on GitHub at [${data.username}](https://github.com/${data.username}). 
 * Please do not hesitate to reach out to me via my email: ${data.email}.
 `;
 }
