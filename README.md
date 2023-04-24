@@ -28,8 +28,7 @@ In the terminal, type "node index.js" to run the application. Answer the prompte
 Inquirer
 
 ## License 
-* ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
-* This application is covered under the [MIT](https://opensource.org/licenses/MIT) license.
+This application is covered under the [MIT](https://opensource.org/licenses/MIT) license.
 
 ## Features 
 Utilizes node.js and Inquirer to prompt the user for input as well as fs to write a new README file. Template literals are used to create the generated markdown document.
