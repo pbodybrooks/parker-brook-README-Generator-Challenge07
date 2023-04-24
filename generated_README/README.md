@@ -1,34 +1,37 @@
 
-# README Generator 
+# README Generator ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
 ## Description 
-A command line application that uses inquirer to prompt the user for all necessary criteria and generated a README based on the user's responses.
+A command line application that uses node.js and Inquirer to prompt the user for all necessary criteria and generates a README based on the user's responses.
 
 ## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-
+* [License](#license)
 * [Features](#features)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
+## Screenshot
+![screenshot of deployed application](../assets/images/screenshot.png)
 
-## Intallation 
-Clone repository, run "npm init" to generate package.JSON, then run "npm i -y" to install inquirer. Following this, enter "node index.js" to run the application and answer the prompted questions.Your generated README can be found in generated_README folder
+## Installation 
+First clone this repository to your local machine. Open a terminal and navigate to the cloned directory. Once there, run "npm init" to generate package.JSON, then run "npm i -y" to install inquirer.
 
 ## Usage 
-Answer the prompted questions.
+In the terminal, type "node index.js" to run the application. Answer the prompted questions as they are presented. If successful, your README.md will be created in the generated_README folder.
 
 ## Credits 
-inquirer
+Inquirer
 
-
+## License ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+This application is covered under the [MIT](https://opensource.org/licenses/MIT) license.
 
 ## Features 
-Uses node and inquirer to prompt the user for README criteria.
+Utilizes node.js and Inquirer to prompt the user for input as well as fs to write a new README file. Template literals are used to create the generated markdown document.
 
 ## Contributing 
 N/A

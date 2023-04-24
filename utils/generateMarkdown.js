@@ -100,8 +100,7 @@ tableOfContents += `
 * [Features](#features)
 * [Contributing](#contributing)
 * [Tests](#tests)
-* [Questions](#questions)
-`;
+* [Questions](#questions)`;
 
 // return the below template literal that builds the entire README
 return `
@@ -113,7 +112,7 @@ ${data.description}
 ## Table of Contents
 ${tableOfContents}
 
-## Intallation 
+## Installation 
 ${data.installation}
 
 ## Usage 
