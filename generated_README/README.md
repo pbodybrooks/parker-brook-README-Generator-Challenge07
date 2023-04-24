@@ -15,11 +15,8 @@ A command line application that uses node.js and Inquirer to prompt the user for
 * [Tests](#tests)
 * [Questions](#questions)
 
-## Screenshot
-![screenshot of deployed application](../assets/images/screenshot.png)
-
 ## Installation 
-First clone this repository to your local machine. Open a terminal and navigate to the cloned directory. Once there, run "npm init" to generate package.JSON, then run "npm i -y" to install inquirer.
+First clone this repository to your local machine. Open a terminal and navigate to the cloned directory. Once there, run "npm i" to install inquirer.
 
 ## Usage 
 In the terminal, type "node index.js" to run the application. Answer the prompted questions as they are presented. If successful, your README.md will be created in the generated_README folder.
@@ -27,7 +24,7 @@ In the terminal, type "node index.js" to run the application. Answer the prompte
 ## Credits 
 Inquirer
 
-## License ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+## License
 This application is covered under the [MIT](https://opensource.org/licenses/MIT) license.
 
 ## Features 
@@ -40,5 +37,5 @@ N/A
 N/A
 
 ## Questions 
-* You can find me on GitHub at [pbodybrooks](https://github.com/pbodybrooks). 
+* You can find me on GitHub at [pbodybrooks](github.com/pbodybrooks). 
 * Please do not hesitate to reach out to me via my email: parkerlamarbrook@gmail.com.

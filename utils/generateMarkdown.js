@@ -69,7 +69,7 @@ function renderLicenseSection(license) {
   let licenseSection = ""
 
   if (license != "N/A") {
-    licenseSection = "## License " + renderLicenseBadge(license);
+    licenseSection = "## License"
     licenseSection += "\nThis application is covered under the " + "[" + license + "](" + renderLicenseLink(license) + ") license.";
   }
 
