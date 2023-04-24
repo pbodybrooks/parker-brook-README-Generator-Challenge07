@@ -16,7 +16,7 @@ A command line application that uses node.js and Inquirer to prompt the user for
 * [Questions](#questions)
 
 ## Screenshot
-![screenshot of deployed application](../assets/images/screenshot.png)
+![Screenshot of app.](assets/images/screenshot.png)
 
 ## Installation 
 First clone this repository to your local machine. Open a terminal and navigate to the cloned directory. Once there, run "npm init" to generate package.JSON, then run "npm i -y" to install inquirer.
