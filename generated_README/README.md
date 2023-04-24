@@ -40,5 +40,5 @@ N/A
 N/A
 
 ## Questions 
-* You can find me on GitHub at [pbodybrooks](github.com/pbodybrooks). 
+* You can find me on GitHub at [pbodybrooks](https://github.com/pbodybrooks). 
 * Please do not hesitate to reach out to me via my email: parkerlamarbrook@gmail.com.
