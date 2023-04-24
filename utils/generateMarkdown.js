@@ -22,11 +22,11 @@ function renderLicenseBadge(license) {
       break;
       
     case "ISC":
-      badge = "![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)";
+      badge = "![License](https://img.shields.io/badge/License-ISC-yellow.svg)";
       break;
     
     case "MIT":
-      badge = "![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)";
+      badge = "![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)";
       break;
 
     default:
@@ -83,11 +83,31 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `
+  let tableOfContents = `
+*[Installation](#installation)
+*[Usage](#usage)
+*[Credits](#credits)
+`
+
+if (data.license !== "N/A"){
+  tableOfContents += `*[License](#license)`;
+}
+
+tableOfContents += `
+*[Features](#features)
+*[Contributing](#contributing)
+*[Tests](#tests)
+*[Questions](#questions)
+`;
+
+return `
 # ${data.title} ${renderLicenseBadge(data.license)}
 
 ## Description 
 ${data.description}
+
+## Table of Contents
+${tableOfContents}
 
 ## Intallation 
 ${data.installation}
@@ -110,8 +130,8 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions 
-You can find me on GitHub at [${data.username}](github.com/${data.username}). 
-Please do not hesitate to reach out to me via my email: ${data.email}.
+*You can find me on GitHub at [${data.username}](github.com/${data.username}). 
+*Please do not hesitate to reach out to me via my email: ${data.email}.
 `;
 }
 
