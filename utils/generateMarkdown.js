@@ -83,6 +83,13 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  // Set any blank values to "N/A"
+  for (const key in data) {
+    if (!data[key]) {
+      data[key] = "N/A";
+    }
+  }
+
   let tableOfContents = `
 * [Installation](#installation)
 * [Usage](#usage)
